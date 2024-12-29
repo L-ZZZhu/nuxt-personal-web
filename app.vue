@@ -11,6 +11,7 @@ onMounted(() => {
   vueVersion.value = nuxtApp.vueApp.version || '未知版本';
   console.log(`当前 Vue 版本: ${vueVersion.value}`);
 });
+
 </script>
 
 <template>
@@ -24,5 +25,10 @@ onMounted(() => {
 </template>
 
 <style scoped>
-/* 页面布局样式 */
 </style>
+
+<script>
+export default definePageMeta({
+  layout: 'default',
+});
+</script>
