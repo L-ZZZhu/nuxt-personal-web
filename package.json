@@ -1,10 +1,22 @@
 {
-  "private": true,
   "scripts": {
-    "build": "NITRO_PRESET=vercel-edge nuxt build",
-    "dev": "nuxt dev"
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "nuxt start"
   },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "ant-design-vue": "^4.2.6",
+    "nuxt": "^3.15.0",
+    "vuetify": "3.7.0-beta.1"
+  },
+  "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321",
   "devDependencies": {
-    "nuxt": "^3.0.0"
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "autoprefixer": "^10.4.20",
+    "less": "^4.2.1",
+    "less-loader": "^12.2.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
   }
 }
