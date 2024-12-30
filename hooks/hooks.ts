@@ -15,3 +15,24 @@ export const useLifecycle = (options: {
   if (options.beforeUnmount) onBeforeUnmount(options.beforeUnmount);
   if (options.unmounted) onUnmounted(options.unmounted);
 };
+
+export function useMousePosition() {
+    const x = ref(0);
+    const y = ref(0);
+  
+    const updateMouse = (event: MouseEvent) => {
+      x.value = event.clientX;
+      y.value = event.clientY;
+    };
+  
+    onMounted(() => {
+      window.addEventListener('mousemove', updateMouse);
+    });
+  
+    onUnmounted(() => {
+      window.removeEventListener('mousemove', updateMouse);
+    });
+  
+    return { x, y };
+  }
+  

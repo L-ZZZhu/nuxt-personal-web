@@ -1,0 +1,77 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.top-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.selfie-container {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    width: 40%;
+}
+
+.selfie-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.self-introduction-container {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* 确保文本靠左对齐 */
+    gap: 10px;
+    /* 添加间距 */
+}
+
+.self-introduction-container h1 {
+    font-family: "Londrina Shadow", serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.3;
+}
+
+.self-introduction-container h2 {
+    font-family: "Londrina Shadow", serif;
+    font-weight: 400;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.3;
+}
+
+.self-introduction-container p {
+    font-size: 1.2rem;
+    color: #373737;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* 添加额外的修饰元素 */
+.self-introduction-container strong {
+    color: #b0527c;
+    font-weight: bold;
+}
+
+.right-side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

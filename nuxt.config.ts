@@ -1,7 +1,5 @@
 import { defineNuxtConfig } from 'nuxt/config';
 
-
-
 export default defineNuxtConfig({
   app: {
     head: {
@@ -10,28 +8,17 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '~/assets/css/main.css', // 如果需要保留主样式
-    'vuetify/styles', // 引入 Vuetify 样式
-    '~/assets/css/tailwind.css', // 引入 Tailwind CSS 样式
+    '~/assets/css/main.css', // 其他需要保留的全局样式
+    'element-plus/dist/index.css', // 引入 Element Plus 样式
   ],
 
-  modules: ['@nuxtjs/tailwindcss'], // 添加 Tailwind 模块（可选）
+  build: {
+    transpile: ['element-plus'], // 确保 Element Plus 被正确转译
+  },
 
   postcss: {
     plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
+      autoprefixer: {}, // 仅保留自动前缀
     },
   },
-  
-  build: {
-    transpile: ['vuetify'],
-  },
-  vite: {
-    define: {
-      'process.env.DEBUG': false,
-    },
-  },
-
-  compatibilityDate: '2024-12-28',
 });

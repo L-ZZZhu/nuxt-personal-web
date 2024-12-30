@@ -1,0 +1,112 @@
+/* 全局基础样式重置 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 元素 display 修正 */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* 设置全局字体和基础样式 */
+html {
+  font-size: 16px; /* 设置基础字体大小 (1rem = 16px) */
+  line-height: 1.5; /* 默认行高 */
+  -webkit-text-size-adjust: 100%; /* 修复字体缩放问题 */
+  box-sizing: border-box; /* 使用更可靠的盒模型 */
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; /* 确保子元素继承盒模型 */
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* 设置默认字体 */
+  color: #333; /* 默认字体颜色 */
+  background-color: #f9f9f9; /* 背景色 */
+  -webkit-font-smoothing: antialiased; /* 提升字体渲染效果 */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 链接样式 */
+a {
+  text-decoration: none; /* 去掉下划线 */
+  color: inherit; /* 继承字体颜色 */
+  cursor: pointer;
+}
+
+a:hover {
+  color: #007BFF; /* 鼠标悬停时字体颜色 */
+}
+
+/* 图片默认样式 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 列表样式 */
+ol, ul {
+  list-style: none;
+}
+
+/* 表单样式 */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  color: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* 表格样式 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th, td {
+  padding: 0;
+  text-align: left;
+}
+
+/* 全局间距控制 */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 自定义滚动条样式 (可选) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
